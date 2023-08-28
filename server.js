@@ -4,7 +4,7 @@ dotenv.config();
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI
+  apiKey: process.env.OPENAI,
 });
 
 import express from 'express';
@@ -27,4 +27,4 @@ app.post('/dream', async (req, res) => {
     res.send({ image });
 });
 
-app.listen(8080, () => console.log('make art on http://localhost:8080/dream'));
+app.listen(5173, () => console.log('make art on http://localhost:5173/dream'));
